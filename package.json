@@ -1,0 +1,29 @@
+{
+  "name": "slick-technical-task",
+  "version": "1.0.0",
+  "description": "technical task",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project coreTests",
+    "report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sohill-Patel/slick-technical-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sohill-Patel/slick-technical-task/issues"
+  },
+  "homepage": "https://github.com/Sohill-Patel/slick-technical-task#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
