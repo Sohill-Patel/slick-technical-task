@@ -37,7 +37,7 @@ export class BookingsWindow {
     await this.page.getByRole('button', { name: 'Staff Member Select Stylist EDIT', exact: true }).click();
     await this.page.getByRole('button', { name: 'Sohill' }).nth(2).click();
     await this.page.getByRole('button', { name: 'Start Time Select Time EDIT', exact: true }).click();
-    await this.page.locator('#booking-sidebar').getByText('1:30 PM').click();        
+    await this.page.locator('#booking-sidebar').getByText('10:30 AM').click();        
   }
 
   async clickSaveBooking() {
@@ -46,8 +46,8 @@ export class BookingsWindow {
 
   async rescheduleBooking() {
     await this.page.getByTestId('BookingLogFooter__edit-button--future').click();
-    await this.page.getByRole('button', { name: 'Start Time 1:30 PM EDIT', exact: true }).click();
-    await this.page.locator('#edit-booking-sticky-header').getByText('2:30 PM', { exact: true }).click();
+    await this.page.getByRole('button', { name: 'Start Time 10:30 AM EDIT', exact: true }).click();
+    await this.page.locator('#edit-booking-sticky-header').getByText('11:30 AM', { exact: true }).click();
     await this.page.getByRole('button', { name: 'SAVE BOOKING' }).click();
   }
 
@@ -56,7 +56,6 @@ export class BookingsWindow {
     await this.deleteBookingBtn.click();
     const deleteBookingsPrompt = new DeleteBookingsPrompt(this.page)
     await deleteBookingsPrompt.deleteBooking();
-
   }
 
 }
